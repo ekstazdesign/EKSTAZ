@@ -1,0 +1,10 @@
+# Working files: keep them off ekstaz.art (the site must not serve notes, plans or research).
+/.claude
+/dev
+/docs
+/reports
+/research_notes
+/AGENTS.md
+/BRAND.md
+/CLAUDE.md
+/README.md

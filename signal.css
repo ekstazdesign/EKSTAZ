@@ -1,0 +1,288 @@
+:root {
+  --ink: #060404;
+  --bone: #f1e9e3;
+  --muted: #b9aaa3;
+  --red: #df0500;
+  --red-text: #ff3b2f;
+  --gutter: clamp(16px, 5vw, 64px);
+  --display: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Space Mono", ui-monospace, Menlo, monospace;
+  --sans: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html.history-navigation { scroll-behavior: auto; }
+body {
+  margin: 0; background: var(--ink); color: var(--bone);
+  font-family: var(--sans); font-size: 16px; line-height: 1.6;
+  overflow-x: hidden;
+}
+:focus-visible { outline: 2px solid var(--red-text); outline-offset: 3px; }
+em { font-style: italic; color: var(--red-text); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+#field { position: fixed; inset: 0; width: 100%; height: 100%; display: block; opacity: 1; pointer-events: none; }
+
+.s-bar {
+  position: fixed; inset: 0 0 auto; z-index: 5;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: max(12px, env(safe-area-inset-top)) var(--gutter) 12px;
+  background: rgb(6 4 4 / .96); border-bottom: 1px solid rgb(241 233 227 / .1);
+}
+.s-bar > a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
+.s-bar img { height: 18px; width: auto; display: block; }
+.s-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.s-sound {
+  display: inline-flex; align-items: center; text-decoration: none;
+  min-height: 44px; padding: 0 14px; border: 1px solid rgb(241 233 227 / .3); border-radius: 999px;
+  background: rgb(6 4 4 / .5); color: var(--bone);
+  font: 700 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; cursor: pointer;
+}
+.s-sound[aria-pressed="true"] { border-color: var(--red); } /* outlined, so only the signup is a filled red action */
+@media (max-width: 759px) { .s-nav .nav-more { display: none; } }
+
+main { position: relative; z-index: 2; overflow-x: clip; }
+html { scroll-padding-bottom: var(--bar-h); }
+:root { --bar-h: 64px; }
+.state {
+  position: relative; min-height: min(100svh, 820px);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: clamp(84px, 10vh, 120px) var(--gutter) calc(var(--bar-h) + 32px);
+  scroll-margin-top: 0;
+}
+.j-visual { display: none; }
+html.signal-staged .j-visual { display: block; width: 100%; height: clamp(150px, 26svh, 320px); margin-bottom: 24px; flex: 0 0 auto; }
+/* Reading surfaces sit below the animation; full-strength particles keep their own space. */
+.s-text { max-width: 700px; min-width: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+.s-label { margin: 0; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.s-line {
+  margin: 0; font-family: var(--display); font-weight: 700;
+  font-size: clamp(40px, 5.3vw, 72px); line-height: 1.07; letter-spacing: -.025em;
+  text-wrap: balance; overflow-wrap: anywhere;
+}
+h1.s-line { font-size: clamp(52px, 7.5vw, 110px); }
+.s-line em { font-weight: 700; }
+.j-body { margin: 0; max-width: 48ch; font-size: clamp(15px, 1.2vw, 17px); line-height: 1.85; }
+.j-muted { color: var(--muted); }
+.j-actions { display: flex; flex-wrap: wrap; gap: 18px 26px; align-items: center; margin-top: 12px; }
+.j-link { display: inline-flex; align-items: center; min-height: 44px; width: fit-content; color: var(--bone); font-size: 13px; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.j-link:hover { color: var(--red-text); }
+a.s-btn { display: inline-flex; align-items: center; justify-content: center; gap: 20px; text-decoration: none; line-height: 1.6; }
+.j-skip { position: fixed; left: 16px; top: 12px; transform: translateY(-150%); z-index: 10000; padding: 14px; background: var(--bone); color: var(--ink); }
+.j-skip:focus { transform: none; }
+.j-arrival .s-text { max-width: 820px; }
+.j-map { display: flex; flex-wrap: wrap; gap: 16px 36px; margin-top: clamp(40px, 7vh, 80px); }
+.j-map a { display: flex; gap: 10px; align-items: center; min-height: 44px; color: var(--bone); text-decoration: none; font-size: 12px; }
+.j-map a span { color: var(--muted); font-size: 11px; }
+.j-map a:hover, .j-map a[aria-current="step"] { color: var(--red-text); }
+.j-layout { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
+.j-art { margin: 0; min-width: 0; scroll-margin-top: 110px; }
+.j-art > a { display: block; }
+.j-art img { display: block; width: 100%; height: auto; }
+.j-art figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin-top: 12px; font-size: 12px; }
+.j-art figcaption a { display: inline-flex; align-items: center; min-height: 44px; color: var(--bone); text-underline-offset: 5px; }
+.j-art figcaption a:hover { color: var(--red-text); }
+.j-encounter { background: transparent; }
+.j-reflection .s-text { max-width: 750px; }
+.j-pause { margin-block: 16px; padding-left: 24px; border-left: 1px solid var(--red); display: grid; gap: 16px; }
+.j-question { margin: 0; max-width: 30ch; font: 500 clamp(26px, 3vw, 36px)/1.4 var(--display); }
+.j-form { gap: 40px; background: transparent; }
+.j-form .j-visual { margin-bottom: 0; }
+.j-studies { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 4vw, 64px); max-width: 1020px; }
+.j-studies img { height: clamp(190px, 35vw, 410px); object-fit: contain; background: var(--ink); }
+.j-form-end { max-width: 1000px; display: grid; gap: 20px; }
+.j-form-end .j-link { display: inline; }
+.j-form-end > .j-next { display: inline-flex; }
+.j-paths { margin-block: 12px; border-top: 1px solid rgb(241 233 227 / .2); }
+.j-paths a { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding: 18px 0; border-bottom: 1px solid rgb(241 233 227 / .2); color: var(--bone); text-decoration: none; font-size: 13px; min-height: 60px; }
+.j-paths a > span:first-child { font: 500 26px/1.2 var(--display); }
+.j-paths a:hover { color: var(--red-text); }
+.j-foot { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 20px 32px; padding: 24px var(--gutter) calc(var(--bar-h) + 24px); border-top: 1px solid rgb(241 233 227 / .15); background: var(--ink); font-size: 12px; }
+.j-foot a { display: inline-flex; min-height: 44px; align-items: center; color: var(--bone); text-underline-offset: 4px; }
+.j-foot p { margin: 0; align-self: center; color: var(--muted); }
+.j-progress { position: fixed; z-index: 5; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px var(--gutter) max(8px, env(safe-area-inset-bottom)); min-height: 60px; background: rgb(6 4 4 / .96); border-top: 1px solid rgb(241 233 227 / .15); font-size: 11px; }
+#journey-position { color: var(--muted); }
+/* Figma Simple Design System / Pagination Next: 8px gap, 8/12px padding,
+   adapted to EKSTAZ's pill controls and a 44px minimum touch target. */
+#journey-next { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 8px 12px; border: 1px solid rgb(241 233 227 / .3); border-radius: 999px; color: var(--bone); text-decoration: none; }
+#journey-next:hover { background: rgb(241 233 227 / .08); border-color: var(--red-text); }
+
+.s-join { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px; }
+.s-join input[type="email"] {
+  min-height: 54px; width: 100%; padding: 0 18px; border-radius: 999px;
+  border: 1px solid rgb(241 233 227 / .35); background: rgb(6 4 4 / .7); color: var(--bone);
+  font: 16px var(--sans);
+}
+.s-join input[type="email"]::placeholder { color: #8d7f79; }
+.s-btn {
+  min-height: 54px; max-width: 100%; padding: 12px 26px; border: 0; border-radius: 999px; cursor: pointer;
+  background: var(--red); color: #fff;
+  font: 700 12px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase;
+}
+.s-btn:hover:not(:disabled) { background: #c80500; }
+.s-btn:disabled { opacity: .6; cursor: progress; }
+.s-btn-ghost { background: transparent; color: var(--bone); border: 1px solid rgb(241 233 227 / .35); }
+.s-btn-ghost:hover:not(:disabled) { background: transparent; border-color: var(--red-text); color: var(--bone); }
+.s-more { margin: 4px 0 0; font-size: 13px; }
+.s-piece { pointer-events: auto; }
+.s-more a { color: var(--bone); }
+.s-more a:hover { color: var(--red-text); }
+.s-status { margin: 0; color: var(--muted); font-size: 13px; min-height: 1.6em; }
+.s-consent { display: flex; gap: 10px; align-items: flex-start; color: var(--muted); font-size: 13px; line-height: 1.5; cursor: pointer; }
+.s-consent input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--red); }
+.s-privacy { margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.s-privacy a { color: var(--bone); }
+
+.s-card {
+  width: min(440px, calc(100vw - 32px)); max-height: calc(100svh - 32px); overflow: auto;
+  padding: 18px; border: 1px solid rgb(241 233 227 / .15); background: var(--ink); color: var(--bone);
+}
+.s-card::backdrop { background: rgb(0 0 0 / .78); }
+.s-card .s-label { margin-bottom: 12px; }
+#card-note { margin: 12px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+#mark-link {
+  display: block; width: 100%; min-height: 44px; margin-top: 12px; padding: 10px;
+  border: 1px solid rgb(241 233 227 / .35); border-radius: 999px;
+  background: var(--ink); color: var(--bone); font: 16px/1.5 var(--mono);
+}
+#sigil { display: block; width: 100%; height: auto; }
+.s-card-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.s-card-actions .s-btn { flex: 1 1 auto; min-height: 46px; padding: 0 18px; }
+
+.s-noscript { position: relative; z-index: 3; padding: 120px var(--gutter); }
+
+@media (max-width: 600px) {
+  .s-bar { flex-wrap: wrap; gap: 6px; }
+  .state { padding-top: 112px; scroll-margin-top: 0; }
+  .s-text { gap: 18px; }
+  html.signal-staged .j-visual { height: clamp(150px, 23svh, 230px); margin-bottom: 24px; }
+  .j-form .j-visual { margin-bottom: 0; }
+  .j-map { gap: 6px 24px; }
+  .j-map a { flex: 1 1 40%; }
+  .j-studies { grid-template-columns: 1fr; gap: 32px; }
+  .j-studies img { height: auto; max-height: 380px; }
+  .j-art figcaption { font-size: 12px; }
+  .j-progress { gap: 10px; font-size: 10px; }
+  #journey-position { max-width: 50%; }
+  #journey-next { max-width: 50%; text-align: right; line-height: 1.6; }
+  .s-nav { margin-left: auto; gap: 6px; }
+  .s-sound { padding-inline: 10px; font-size: 10px; letter-spacing: .1em; }
+}
+@media (min-width: 900px) {
+  .j-layout { grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 100px); }
+  .j-reflection .s-text, .j-expression .s-text, .state-join .s-text { margin-left: 10vw; }
+  .j-form-end { grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
+}
+@media (max-height: 500px) {
+  html.signal-staged .j-visual { height: 100px; margin-bottom: 24px; }
+}
+@media (min-width: 760px) {
+  .s-join { grid-template-columns: 1fr auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .s-cue { animation: none; }
+}
+
+/* One fade through ink, shared with the work and magazine pages. */
+@view-transition { navigation: none; }
+html::after {
+  content: ""; position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+  background: #060404; opacity: 0; animation: ekstaz-arrive .9s ease both;
+}
+html.leaving::after { animation: none; opacity: 1; transition: opacity .4s ease; }
+@keyframes ekstaz-arrive { from { opacity: 1; } to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  html::after, html.leaving::after { animation: none; transition: none; opacity: 0; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* Elton's EKSTAZ letters as a diagonal band between chapters; scroll slides it. */
+.j-band { position: relative; z-index: 2; overflow: hidden; margin: 0 -10vw; padding: 18px 0; transform: rotate(-7deg); pointer-events: none; }
+.j-band-track { display: flex; gap: clamp(24px, 4vw, 56px); width: max-content; transform: translate3d(var(--band-x, 0px), 0, 0); will-change: transform; }
+.j-band-word { display: flex; align-items: flex-end; gap: clamp(8px, 1.4vw, 18px); }
+.j-band img { display: block; height: clamp(64px, 11vw, 150px); width: auto; }
+.j-band[data-band="-1"] img { opacity: .9; filter: drop-shadow(0 0 18px rgb(223 5 0 / .35)); }
+@media (prefers-reduced-motion: reduce) { .j-band-track { transform: none; } }
+
+/* Work in the first screen: one drawing beside the headline (desktop) or under it (phone). */
+.j-hero-art { margin: 8px 0 0; max-width: 260px; }
+.j-hero-art img { display: block; width: 100%; height: auto; max-height: 26svh; object-fit: contain; object-position: left; background: var(--ink); }
+@media (min-width: 900px) {
+  .j-arrival .s-text { max-width: none; display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 30vw); column-gap: clamp(32px, 6vw, 96px); align-items: end; }
+  .j-arrival .s-text > :not(.j-hero-art) { grid-column: 1; }
+  .j-arrival .j-hero-art { grid-column: 2; grid-row: 1 / span 5; align-self: center; max-width: none; margin: 0; }
+  .j-arrival .j-hero-art img { max-height: 44svh; }
+}
+}
+
+/* chapters are as tall as their content, not a full screen each; the arrival keeps the full first screen */
+.state:not(.j-arrival) { min-height: 0; }
+
+html.signal-staged .j-arrival .j-visual { height: clamp(160px, 30svh, 360px); }
+
+/* Glitch: Elton's own colour-shift frames of Pain flicker over the original once as it arrives. */
+.j-glitchable a { position: relative; display: block; }
+.j-glitch { position: absolute; inset: 0; pointer-events: none; }
+.j-glitch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.j-glitchable.glitching .j-glitch img:nth-child(1) { animation: glitch-a .7s steps(1) both; }
+.j-glitchable.glitching .j-glitch img:nth-child(2) { animation: glitch-b .7s steps(1) both; }
+.j-glitchable.glitching .j-glitch img:nth-child(3) { animation: glitch-c .7s steps(1) both; }
+@keyframes glitch-a { 0% { opacity: 1; transform: translateX(-6px); } 12% { opacity: 0; } 46% { opacity: 1; transform: translateX(4px); } 54%, 100% { opacity: 0; transform: none; } }
+@keyframes glitch-b { 0%, 12% { opacity: 0; } 14% { opacity: 1; transform: translate(5px, -2px); } 26% { opacity: 0; } 70% { opacity: .9; transform: none; } 78%, 100% { opacity: 0; } }
+@keyframes glitch-c { 0%, 28% { opacity: 0; } 30% { opacity: 1; clip-path: inset(18% 0 46% 0); transform: translateX(-8px); } 40%, 100% { opacity: 0; clip-path: none; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .j-glitch { display: none; } }
+
+/* Shorter chapters: the stages keep their size; the copy and spacing around them tighten. */
+@media (min-width: 601px) { .state:not(.j-arrival) { padding-top: clamp(64px, 8vh, 96px); } }
+.j-paths a { padding: 12px 0; }
+.j-paths a > span:first-child { font-size: 21px; }
+.j-pause { margin-block: 4px; gap: 10px; }
+@media (max-width: 600px) {
+  .j-studies { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .j-studies img { max-height: 240px; }
+}
+.j-band img { height: clamp(48px, 6.5vw, 96px); }
+.j-band { margin-block: -24px; }
+.state { padding-bottom: calc(var(--bar-h) + 16px); }
+.j-encounter .j-art img { max-height: min(56svh, 460px); width: auto; max-width: 100%; margin-inline: auto; }
+.j-reflection .j-pause { margin-block: 0; }
+@media (min-width: 900px) {
+  .j-paths { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; }
+  .j-expression .s-text, .state-join .s-text { max-width: 760px; }
+}
+.j-body { line-height: 1.65; }
+.s-text { gap: 14px; }
+.j-studies img { height: clamp(180px, 26vw, 320px); }
+.j-question { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.3; }
+
+/* A fifth path spans both columns. Elton's line about Guilty sits beside the signup. */
+@media (min-width: 900px) { .j-paths a:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+.j-quote { margin: 18px 0 0; padding-left: 14px; border-left: 2px solid var(--red, #df0500); max-width: 44ch; }
+.j-quote p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--bone, #f1e9e3); }
+.j-quote footer { margin-top: 6px; font-size: 12px; color: var(--muted, #b9aaa3); }
+
+/* Intact garment concepts beside the existing six-state journey. */
+.j-collection-preview { margin-top: 32px; max-width: 1020px; }
+.j-preview-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; align-items: center; margin-bottom: 14px; }
+.j-preview-heading > p { margin: 0; font-size: 12px; }
+.j-preview-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(10px, 2vw, 24px); }
+.j-preview { min-width: 0; color: var(--bone); text-decoration: none; }
+.j-preview img { display: block; width: 100%; height: clamp(160px, 26vw, 280px); object-fit: contain; background: #000; border: 1px solid rgb(241 233 227 / .14); }
+.j-preview > span { display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: 14px; }
+.j-preview small { color: var(--muted); font: 11px/1.5 var(--mono); }
+.j-preview:hover > span { color: var(--red-text); }
+.j-preview-note { margin: 14px 0 0; max-width: 65ch; color: var(--muted); font-size: 12px; }
+@media (max-width: 759px) {
+  .j-arrival { padding-top: 136px; }
+  .j-preview img { height: clamp(120px, 38vw, 240px); }
+  .j-preview > span { font-size: 12px; }
+  .j-preview small { font-size: 10px; }
+}
+
+/* The first collection glimpse precedes the original drawing. */
+.j-arrival .s-text { display: grid; grid-template-columns: minmax(0, 1fr); max-width: 900px; }
+.j-arrival .s-text > * { grid-column: 1; }
+.j-arrival > .j-hero-art { margin-top: 28px; max-width: 170px; }
+html.signal-staged .j-arrival .j-visual { height: clamp(160px, 20svh, 240px); }

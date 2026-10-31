@@ -1,5 +1,9 @@
+# tooling / plugin junk — never part of the site
+.anchor/
+.cto-toolkit/
+.claude-designlog-hooks.log
+.locks/
+design-log/
+.DS_Store
 node_modules/
-.project_id
-.github_repo
-.env
-.env.*
+.wrangler/

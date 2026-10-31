@@ -1,0 +1,34 @@
+{
+  "source": "02-The-Drive-In_20261007_204744_0000.pdf",
+  "sourceSha256": "51555e3d7c3b64df3bdb17a45df530c6392dabef3855b57d2fc09bfc18907370",
+  "method": "PyMuPDF Document.extract_image(xref); extracted JPEG bytes written unchanged. Page numbers are one-based. No page render, crop, resizing, recolouring or recompression.",
+  "assets": [
+    {
+      "file": "hoodie-concept.jpg",
+      "piece": "hoodie",
+      "page": 2,
+      "xref": 42,
+      "width": 1023,
+      "height": 1268,
+      "sha256": "45782c59c3f3bf88edee3c1e0959c53b1863c999ffc243f39de47baa03d1f207"
+    },
+    {
+      "file": "tee-concept.jpg",
+      "piece": "tee",
+      "page": 3,
+      "xref": 58,
+      "width": 1023,
+      "height": 1268,
+      "sha256": "436aef5bba7246071805670b4feff4642d37c7d30ccf3c10ec5d1fd9c9ae4fc4"
+    },
+    {
+      "file": "cap-concept.jpg",
+      "piece": "cap",
+      "page": 4,
+      "xref": 71,
+      "width": 885,
+      "height": 885,
+      "sha256": "4278d856b80aa9a19d7db669f24f0463460370ca28a9f840b65e05b3ca4b9733"
+    }
+  ]
+}

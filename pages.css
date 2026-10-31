@@ -1,0 +1,52 @@
+/* About and Whips pages. Built on the tokens and components in styles.css. */
+
+.page { padding: 140px var(--gutter) 72px; max-width: 1200px; margin: 0 auto; }
+.page-head { display: grid; gap: 10px; margin-bottom: 40px; }
+.page-head .sec-title { margin: 0; }
+
+/* ---------- About ---------- */
+.about-grid { display: grid; gap: 40px; }
+@media (min-width: 900px) { .about-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: start; } }
+.about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.about-photos img { width: 100%; height: 100%; object-fit: cover; }
+.about-photos .about-main { grid-column: 1 / -1; }
+@media (min-width: 900px) { .about-photos { position: sticky; top: 110px; } }
+.about-copy { display: grid; gap: 22px; min-width: 0; max-width: 64ch; }
+.about-copy p { margin: 0; }
+.about-place { color: var(--red-text); font: 700 12px/1.5 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+.about-arabic { margin: 0; padding: 18px 20px; border-right: 2px solid var(--red); background: rgb(241 233 227 / .04); font-size: 20px; line-height: 1.8; }
+.about-arabic p { margin: 0; }
+.about-translation { color: var(--muted); font-size: 15px; }
+.about-statement p { font-size: 18px; line-height: 1.7; }
+.about-statement p + p { margin-top: 16px; }
+.about-practice { padding-top: 28px; border-top: 1px solid var(--line); display: grid; gap: 18px; }
+.about-practice .lead { font: 500 clamp(22px, 3vw, 30px)/1.3 var(--display); }
+.about-figures { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.about-figures figure { margin: 0; }
+.about-figures figcaption { margin-top: 8px; color: var(--muted); font: 12px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.about-listen { padding-top: 28px; border-top: 1px solid var(--line); display: grid; gap: 16px; }
+.about-listen h2 { margin: 0; font: 500 22px/1.3 var(--display); }
+.about-listen iframe { display: block; width: 100%; border: 0; border-radius: 12px; background: var(--ink-2); }
+.about-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* ---------- Whips ---------- */
+.whips-hero { position: relative; min-height: min(82svh, 760px); display: flex; align-items: flex-end; padding: 140px var(--gutter) 48px; overflow: hidden; }
+.whips-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.whips-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, var(--ink) 4%, rgb(6 4 4 / .35) 55%, rgb(6 4 4 / .55)); }
+.whips-hero > div { position: relative; z-index: 1; display: grid; gap: 8px; }
+.whips-hero .sec-title { margin: 0; }
+.whips-section { display: grid; gap: 14px; margin-top: 56px; }
+.whips-section h2 { margin: 0; }
+.video-frame { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: var(--ink-2); }
+.video-frame iframe, .video-frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-frame.tall { aspect-ratio: auto; display: flex; justify-content: center; }
+.video-frame.tall video { position: static; width: auto; max-width: 100%; height: min(82svh, 820px); }
+.video-caption { margin: 0; color: var(--muted); font: 12px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.whips-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.whips-grid a { display: block; text-decoration: none; }
+.whips-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--ink-2); transition: transform .3s ease; }
+.whips-grid a:hover img { transform: scale(1.02); }
+.whips-grid span { display: block; margin-top: 8px; font: 12px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { .whips-grid img { transition: none; } }
+
+.page-foot { margin-top: 72px; }

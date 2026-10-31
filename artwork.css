@@ -1,0 +1,119 @@
+/* A still space for the original work. */
+.work-note { margin: 18px 0 0; color: var(--muted); font-size: 13px; }
+main section[id] { scroll-margin-top: 88px; }
+.g-item { text-decoration: none; }
+.garment-study { position: relative; display: block; }
+.garment-study-label {
+  position: absolute; bottom: 12px; left: 12px; padding: 4px 8px;
+  background: rgba(6,4,4,.8); color: var(--bone); font: 10px/1.6 var(--mono);
+  letter-spacing: .16em; text-transform: uppercase;
+}
+.bar-return {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 8px;
+  color: var(--bone); font: 10px/1.4 var(--mono); text-decoration: none;
+  letter-spacing: .1em; text-transform: uppercase;
+}
+.bar-return[hidden], .viewer [hidden] { display: none !important; }
+.viewer {
+  width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh;
+  margin: 0; padding: 0; border: 0; background: var(--ink); color: var(--bone);
+  overflow: hidden;
+}
+.viewer[open] { display: flex; flex-direction: column; align-items: stretch; justify-content: start; }
+.viewer::backdrop { background: var(--ink); }
+.viewer-bar {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; min-height: 76px;
+  padding: max(12px, env(safe-area-inset-top)) var(--gutter) 12px;
+  border-bottom: 1px solid var(--line);
+}
+.viewer-bar .label { letter-spacing: .16em; }
+#art-count { margin-left: 16px; color: var(--bone); letter-spacing: .05em; }
+.viewer-close {
+  position: static; width: auto; height: auto; min-height: 44px;
+  padding: 0 20px; font: 700 11px/1.6 var(--mono); background: transparent;
+}
+.viewer-body { min-height: 0; flex: 1; display: flex; flex-direction: column; overflow: auto; }
+.viewer-stage {
+  position: relative; min-height: 220px; flex: 1 0 40dvh;
+  display: flex; align-items: center; justify-content: center;
+  overflow: auto; overscroll-behavior: contain; background: #000;
+  scrollbar-color: var(--muted) var(--ink); outline-offset: -4px;
+}
+.viewer #art-image {
+  max-width: 100%; max-height: 40dvh; width: auto; height: auto;
+  object-fit: contain; flex-shrink: 0;
+}
+.viewer-stage.is-detail { display: block; }
+.viewer-stage.is-detail #art-image { max-width: none; max-height: none; height: auto; }
+.viewer-load { position: absolute; margin: 0; padding: 24px; color: var(--muted); font-size: 12px; }
+.viewer-stage.is-loading #art-image { visibility: hidden; }
+.viewer-info { flex: 0 0 auto; padding: 22px var(--gutter); border-top: 1px solid var(--line); }
+.viewer-heading { margin-bottom: 18px; }
+#art-title {
+  margin: 8px 0 0; font: 800 clamp(34px, 8vw, 64px)/.98 var(--display);
+  letter-spacing: -.025em; overflow-wrap: anywhere;
+}
+.viewer-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.viewer-actions .btn { min-height: 44px; padding: 0 18px; font-size: 11px; letter-spacing: .1em; }
+.viewer-status { min-height: 1.6em; margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+.viewer-link {
+  display: block; width: 100%; min-height: 44px; margin-top: 8px; padding: 10px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--ink-2); color: var(--bone); font: 12px var(--mono);
+}
+.viewer-related {
+  display: flex; align-items: center; gap: 14px; margin-top: 18px; padding-top: 18px;
+  border-top: 1px solid var(--line); text-decoration: none;
+}
+.viewer .viewer-related img { width: 56px; height: 64px; object-fit: contain; background: var(--ink-2); }
+.viewer-related > span { display: grid; gap: 4px; }
+.viewer-related .label { font-size: 11px; letter-spacing: .14em; }
+#art-related-title { font-size: 12px; }
+.viewer-related:hover #art-related-title { color: var(--red-text); }
+.viewer-nav {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px var(--gutter) max(12px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+}
+.viewer-nav .btn { min-height: 44px; padding: 0 18px; font-size: 11px; letter-spacing: .1em; }
+.viewer-nav .label { font-size: 11px; letter-spacing: .05em; white-space: nowrap; }
+@media (min-width: 900px) {
+  .viewer-body { display: grid; grid-template-columns: minmax(0, 1fr) 340px; overflow: hidden; }
+  .viewer-stage { min-height: 0; min-width: 0; padding: 24px; }
+  .viewer #art-image { max-width: 100%; max-height: calc(100dvh - 208px); }
+  .viewer-stage.is-detail { padding: 0; }
+  .viewer-info { padding: 40px 28px; border-top: 0; border-left: 1px solid var(--line); overflow: auto; }
+  .viewer-heading { margin-bottom: 32px; }
+  .viewer-actions { flex-direction: column; align-items: start; gap: 12px; }
+  .viewer-related { margin-top: 32px; padding-top: 24px; }
+}
+@media (max-width: 400px) {
+  .bar:has(.bar-return:not([hidden])) { gap: 6px; }
+  .bar:has(.bar-return:not([hidden])) .bar-logo img { width: 84px; }
+  .bar-end { gap: 4px; }
+  .bar-return { padding: 0 4px; font-size: 10px; letter-spacing: 0; }
+  .bar-sound { padding: 0 8px; letter-spacing: .08em; }
+  .bar-cta { padding: 0 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .viewer .btn { transition: none; }
+  .viewer .btn:active { transform: none; }
+}
+
+/* A reading: Elton's own words for the piece, in the detail card. */
+.viewer-reading { margin: 18px 0 4px; padding-top: 16px; border-top: 1px solid rgb(241 233 227 / .15); display: grid; gap: 10px; }
+.viewer-reading .label { margin: 0; color: var(--red-text, #ff3b2f); }
+#art-reading-text { margin: 0; font: italic 500 clamp(16px, 1.25vw, 18px)/1.6 var(--display, Georgia, serif); color: var(--bone, #f1e9e3); max-width: 46ch; }
+.viewer-reading-note { margin: 0; font-size: 12px; line-height: 1.5; color: var(--muted, #b9aaa3); max-width: 46ch; }
+
+/* Extra print files and playlists (merged from the Grok site) */
+.print-more { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.print-more li { border-bottom: 1px solid var(--line); }
+.print-more a { display: flex; align-items: center; gap: 16px; min-height: 56px; padding: 10px 0; text-decoration: none; font: 500 18px/1.3 var(--display); }
+.print-more a:hover span:first-of-type, .print-more a:focus-visible span:first-of-type { color: var(--red-text); }
+.print-more img { width: 96px; height: auto; flex-shrink: 0; }
+.print-more .print-kind { margin-left: auto; font: 700 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.sound-player { margin-top: 28px; max-width: 720px; }
+.sound-player iframe { display: block; border: 0; border-radius: 12px; background: var(--ink-2); }
+.playlists { max-width: 720px; }
+

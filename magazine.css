@@ -1,0 +1,26 @@
+.reader-header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px var(--gutter); border-bottom:1px solid var(--line); }
+.reader-header > a { min-height:44px; display:inline-flex; align-items:center; }
+.reader-header img { width:110px; }
+.reader-back { min-height:44px; min-width:44px; justify-content:center; display:inline-flex; align-items:center; font-size:12px; text-decoration:none; }
+.reader { padding:40px var(--gutter) 64px; }
+.reader-intro { max-width:760px; margin:0 auto 28px; }
+.reader-intro h1 { font-size:clamp(48px,10vw,88px); }
+.reader-intro > p:not(.label) { max-width:55ch; color:var(--muted); }
+.reader-intro > a { display:inline-flex; align-items:center; min-height:44px; font-size:12px; text-underline-offset:4px; }
+.reader-controls { position:sticky; top:0; z-index:2; display:flex; gap:8px; justify-content:center; align-items:center; padding:12px 0; background:rgba(6,4,4,.96); }
+.reader-controls[hidden] { display:none; }
+.reader-controls .btn { min-height:48px; min-width:44px; padding:0 16px; font-size:11px; letter-spacing:.06em; }
+.reader-controls .btn:disabled { opacity:.5; cursor:default; }
+.reader-controls select { min-width:0; width:180px; min-height:48px; border:1px solid var(--line); border-radius:999px; padding:0 12px; background:var(--ink-2); color:var(--bone); font-family:var(--mono); font-size:12px; }
+.reader-status { text-align:center; font-size:12px; color:var(--muted); margin:8px 0 20px; }
+.reader-page { margin:0 auto; max-width:760px; overflow:auto; background:#000; }
+.reader-page img { width:100%; max-width:none; height:auto; }
+.reader-page.zoomed img { width:1520px; }
+.reader-join { display:flex; width:fit-content; margin:32px auto 0; }
+@media (max-width:380px) { .reader-controls { gap:5px; } .reader-controls .btn { padding:0 11px; } .reader-controls select { width:145px; font-size:11px; } }
+
+/* One header on every page: Work · Print · Listen · Updates, with sound as a small toggle. */
+.reader-nav { display: flex; align-items: center; gap: 8px 22px; margin-left: auto; font-size: 12px; }
+.reader-nav a { min-height: 44px; min-width: 44px; justify-content: center; display: inline-flex; align-items: center; color: var(--bone); text-decoration: none; letter-spacing: .12em; text-transform: uppercase; }
+.reader-nav a:hover { color: var(--red-text); }
+@media (max-width: 759px) { .reader-nav .nav-more { display: none; } .reader-nav { gap: 12px; } }
