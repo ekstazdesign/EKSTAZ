@@ -112,3 +112,5 @@ Source: Drive folder `139uTAYOQiTTQPPEH46_3AiN_H_n2hbKk`, subfolder `Elton D Vis
 - **Whips:** the old Grok export labelled 16 Jebel Jais meet photos as a "black car night shoot" with invented alt text, and nine were sideways. They are now upright, deduplicated, and described as what they show. `drive-03` (350Z) is from Drive `EKSTAZ/Whips/car-03.jpg`. The night set is the white ML only.
 - **Garment spec sheets** from Drive `EKSTAZ/Mockups` (Hoodie Mockup, Tshirt Mockup) sit beside the hoodie study.
 - `EKSTAZ-main.zip` (Downloads and Drive) is a GitHub zip of the old Grok export repo (commit 31951de); nothing newer in it.
+
+- **Removed** `assets/drawings/` (01-figure to 06-car): the old Grok export labelled Elton's custom letters A, E, K, S, T and Z as drawings (Figure, Face, Mask, Skull, Wings, car Study). Elton asked for them to come off the gallery (2026-11-02). The letters remain in `assets/letters/` as identity assets.
