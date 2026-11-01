@@ -117,3 +117,9 @@ main section[id] { scroll-margin-top: 88px; }
 .sound-player iframe { display: block; border: 0; border-radius: 12px; background: var(--ink-2); }
 .playlists { max-width: 720px; }
 
+
+/* Elton's spec sheets beside the garment study */
+.garment-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0; max-width: 420px; }
+.garment-specs a { display: block; text-decoration: none; }
+.garment-specs img { width: 100%; height: auto; background: #fff; }
+.garment-specs span { display: block; margin-top: 6px; font: 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }

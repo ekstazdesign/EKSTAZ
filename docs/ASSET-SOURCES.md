@@ -103,3 +103,12 @@ Source: Drive folder `139uTAYOQiTTQPPEH46_3AiN_H_n2hbKk`, subfolder `Elton D Vis
 - **Held back for Elton's decision** (drug-reference risk under his own brief): The Molecule (shows the MDMA structure), CREED EKSTAZ (says "laced in pure psychedelic spirit"), Echoes of other lives (joints around the cross; no text supplied).
 - **Titles**: Elton's titles from his note of 7 Oct 2026 replace the working titles for Imagine, Ribcage, Crown, Don't fit in, Before thee, Hands, Red, Field and Pain. The hoodie study's viewer title is "Elton 1a". His title for Cross ("J is J") is held back with the same drug-reference question.
 - `table.csv` (Downloads) maps original file dates to titles, including pieces not yet supplied as files: In My Blood, Galaris, The Circle, Of The Heart, The Creed, The Creed (Quiet), Rising.
+
+## Google Drive pass (added 2026-11-01)
+
+- From Drive `EKSTAZ/ekstaz.art/work` (ekstaz.design): **Galaris** (typeface specimen, placed on white because the letters are black on transparent), **Of The Heart** (`38.png`), **The Creed** (`CREED`; the cleaner card without "laced in pure psychedelic spirit"). No texts supplied yet.
+- Held back with the other drug-reference items: **In My Blood** (`20221225_085247.png`, hands holding joints around the cross) and `CREED ext` (= CREED EKSTAZ).
+- `table.csv` names resolved: The Circle = Ouroboros null and void (`20240728`), Rising = Governance (`Untitled 20240516`), The Creed (Quiet) = `EKSTAZ (1).png`.
+- **Whips:** the old Grok export labelled 16 Jebel Jais meet photos as a "black car night shoot" with invented alt text, and nine were sideways. They are now upright, deduplicated, and described as what they show. `drive-03` (350Z) is from Drive `EKSTAZ/Whips/car-03.jpg`. The night set is the white ML only.
+- **Garment spec sheets** from Drive `EKSTAZ/Mockups` (Hoodie Mockup, Tshirt Mockup) sit beside the hoodie study.
+- `EKSTAZ-main.zip` (Downloads and Drive) is a GitHub zip of the old Grok export repo (commit 31951de); nothing newer in it.
