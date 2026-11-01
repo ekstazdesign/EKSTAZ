@@ -96,3 +96,10 @@ Source: Drive folder `139uTAYOQiTTQPPEH46_3AiN_H_n2hbKk`, subfolder `Elton D Vis
 ## Artwork texts (2026-10-08)
 
 `readings.js` holds Elton's own amended texts, word for word, from `website_review_1.txt` supplied by Haris on 2026-10-08 (not in the repo). His file lists 15 pieces in gallery order; Crown Vic has no text. His headings are not used as titles: the gallery titles stay (Haris, 2026-10-08).
+
+## October 2026 pieces and titles (added 2026-11-01)
+
+- **14 new pieces** in `assets/art/` from Elton's Drive download of 10 Oct 2026 (`drive-download-20261010T062149Z-1-001`): Burnout, Emptiness, Night, Governance, Reach, The Eye, The Heart, The Flower, The Mark, The Star, Ouroboros null and void, E30, The Coupe, Widebody. Sized to 2000 px and 640 px. Texts in `readings.js` are Elton's own, from `ekstaz-readings.txt` (10 Oct 2026, "Grammar and spelling only. Nothing added.").
+- **Held back for Elton's decision** (drug-reference risk under his own brief): The Molecule (shows the MDMA structure), CREED EKSTAZ (says "laced in pure psychedelic spirit"), Echoes of other lives (joints around the cross; no text supplied).
+- **Titles**: Elton's titles from his note of 7 Oct 2026 replace the working titles for Imagine, Ribcage, Crown, Don't fit in, Before thee, Hands, Red, Field and Pain. The hoodie study's viewer title is "Elton 1a". His title for Cross ("J is J") is held back with the same drug-reference question.
+- `table.csv` (Downloads) maps original file dates to titles, including pieces not yet supplied as files: In My Blood, Galaris, The Circle, Of The Heart, The Creed, The Creed (Quiet), Rising.
