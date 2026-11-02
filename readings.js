@@ -1,0 +1,33 @@
+// Elton's own words for each artwork, shown in the viewer's detail card.
+// Source: his amended texts supplied by Haris, 2026-10-08 (docs/ASSET-SOURCES.md). Do not edit the words.
+window.EKSTAZ_READINGS = {
+  "imagine": "\"Imagine all the people living life in peace\" is a quote from the 1971 peace anthem \"Imagine\" by John Lennon. I used to notice the quote on LBW kits, a reflection of car culture's understanding around the passion for cars. Personal and peaceful, this design features a Toyota AE86 emanating that thought.",
+  "kenosha": "Finding order. A hollow chest, the head held up by structure alone. He is not spineless. The beating did not take that. The mind is analytical, guided by a mindset he made himself. Calloused knees from falling prostrate, under the weight of his own thoughts or under something foreign. The skin has hardened until it cracks when he moves. The face has lost its softness. He searches for anything that might fill the emptiness, and the search strains the forearm. One foot is cut at the Achilles. He cannot walk without pain. The shin has worn thin from the confused effort to fix what he does not know how to fix. The other foot stays planted. The anklet is heavy on purpose. It is his belief, his faith, his sense of existence. The thing that keeps him on the ground.",
+  "feel-it": "The god of war, conflicted. His armour and helm remind him of his status. Inside he is human, he bows his head and quietly mourns the day he was first shown victory.",
+  "ribcage": "EKSTAZ.",
+  'crown': 'POLICE is written on the door, but the car sits alone in black space, outlined in red and filled with blue. The push bar and spotlight give it the hardware of authority. Drawn this carefully, it could be admired or examined with suspicion. The title adds another form of rule; neither the name nor the bright lines settles which response belongs here.',
+  "dont-fit-in": "A saucer sends a fan of light between worlds. Searching for what calls its name, it moves from age to age, world to world; not realising it is alone; not understanding that its calling is to one day become a world of its own.",
+  "before-thee": "A cold whisper of Kenosha's existence, stagnant and lifeless on this flipside.",
+  "hands": "Blinding is a self-portrait in which the artist covers their own eyes, staging blindness as a choice rather than an injury. The star field stays visible around the hand, while the red-cyan split makes the body itself fail to line up, as if the picture kept arriving after the sitter stopped looking.",
+  "cross": "The joints leave the cross the way light leaves a source, each one a path back to the same root and out again. What burns is not separate from what remains. Smoke rises, stars prick the dark, and the handwriting circles the center until the sentence becomes a pulse: there is something in the blood. That something is EKSTAZ. The weed is only the proof that the passion was already circulating, touching everything around it and returning, altered, to the place it began.",
+  "red": "Whatever can happen, will happen. A presence does not ask. It arrives like a hand through the wall, already certain. The cloud is that certainty. The name is only the cloak. Under it, the blast of having been there. I was there is not a memory. It is the knock.",
+  "field": "The command is already spoken. The fingers never meet. That gap is the work. Creation does not live in the touch, which would end it, but in the distance that still has to be crossed. Three times the same reach, three times the same refusal to arrive. CREATE is not what the hands have done. It is what the space between them keeps demanding.",
+  "falling": "From the outside a life can look polished. Up close it is a set of problems, and the fall begins when the combination is the kind you cannot carry. Winged, and still dropping, between order and chaos. Not because he leapt. Because he could not balance what was already in his hands.",
+  "pain": "The face will not choose. Eyes crossed out, so it cannot show which one it is meeting. Hands at the jaw, holding the mouth shut or forcing it open. Pain and pleasure arrive through the same teeth. The drawing keeps both, and refuses to say which hand is which.",
+  "hoodie-study": "The hoodie is the carrier, not the picture. A small box on the chest, EKSTAZ, enough to be read up close. The back holds the main design, a field left open for the work. On the sleeve, an embroidered red cross, the only mark that sits in the cloth itself. Front for the name. Back for the image. The cross for what stays when the print is gone.",
+  // Elton's readings for the October 2026 pieces (ekstaz-readings.txt, 10 Oct 2026). Grammar and spelling only.
+  "burnout": "Visual documentation of experiencing burnout as a graphic designer. The fear of backing away from the desk, fingers ground to bone in the pursuit of monetary gain, and the painful paradox of it all.",
+  "emptiness": "I always wondered how absence can feel so tangible. How the scream can be so silent. How dare my hollow chest drag me down into myself?",
+  "night": "How the world ruined what sleep means to me.",
+  "governance": "To be honest, I drew this just to manifest my observance that there is a very real duality inside me that governs my world. J has always been the gateway to this reckoning whenever I want. A dance with the devil inside is not what this is.",
+  "reach": "Reaching for something so forbidden.",
+  "the-eye": "Terrifying yet beautiful.",
+  "the-heart": "Don’t you feel how unjust it is for those cold, grim hands to be anywhere near a human heart?",
+  "the-flower": "For me, this is like showing through art what EKSTAZ is. If you, as a soul or an existence, are the thing in the middle, EKSTAZ is your reason and bearing for every direction. That idea is in my blood.",
+  "the-mark": "Greater than I. Realer than anything.",
+  "the-star": "I had created this as an acknowledgement to my growing reality; organically created.",
+  "ouroboros": "Put a bullet right through Ouroboros.",
+  "e30": "“Ain’t she pretty?” The E30 is the last of the small ones. Light, honest, every edge where it should be. No extra weight. No extra noise. It does not need to be fast to move you. It only needs to be exactly what it is.",
+  "the-coupe": "A 335i is all I’d ever need. Wanting one is a dream enough. When I do get my hands on one, she won’t be there? Don’t really want one anymore.",
+  "widebody": "EKSTAZ were a car...",
+};

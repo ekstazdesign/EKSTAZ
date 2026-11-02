@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" data-drone="quiet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EKSTAZ — The work</title>
+  <meta name="description" content="Browse EKSTAZ drawings, posters and images. Look closer at the garment study and read the December 2021 magazine.">
+  <link rel="canonical" href="https://ekstaz.art/work.html">
+  <meta name="theme-color" content="#060404">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ekstaz.art/work.html">
+  <meta property="og:title" content="EKSTAZ — The work">
+  <meta property="og:description" content="Drawings, posters, images, a garment study and the December 2021 archive.">
+  <meta property="og:image" content="https://ekstaz.art/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="EKSTAZ in red letters on black, over a faded red star">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ekstaz.art/assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/art/kenosha.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="artwork.css">
+  <link rel="stylesheet" href="site-nav.css">
+</head>
+<body>
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="bar site-header">
+  <a class="bar-logo" href="/" aria-label="EKSTAZ home"><img src="assets/wordmark-crimson-sm.png" alt="EKSTAZ" width="135" height="24"></a>
+  <nav class="bar-nav site-nav" aria-label="Main">
+    <a href="collection.html">Collection</a>
+    <a href="work.html" aria-current="page">Explore</a>
+    <a href="whips.html">Whips</a>
+    <a href="about.html">About</a>
+    <a href="/#carry">Updates</a>
+  </nav>
+  <div class="bar-end"><a id="return-mark" class="bar-return" href="/" hidden>Your signal</a><button type="button" id="sound" class="bar-sound" aria-pressed="true">Sound on</button></div>
+</header>
+
+<main>
+  <section id="top" class="hero hero-work">
+    <img class="hero-art" src="assets/art/kenosha.jpg" srcset="assets/art/kenosha-sm.jpg 640w, assets/art/kenosha.jpg 2000w" sizes="100vw" alt="">
+    <div class="hero-inner">
+      <nav class="bar-nav site-context" aria-label="Explore formats"><a href="#work">Artwork</a><a href="#print">Print</a><a href="#productions">Listen</a></nav>
+      <div class="hero-letters" aria-hidden="true"><img src="assets/letters/e.png" alt=""><img src="assets/letters/k.png" alt=""><img src="assets/letters/s.png" alt=""><img src="assets/letters/t.png" alt=""><img src="assets/letters/a.png" alt=""><img src="assets/letters/z.png" alt=""></div>
+      <p class="label">EKSTAZ · Artwork and studies</p>
+      <h1 class="sec-title">The work</h1>
+      <p class="work-lead">Drawings, posters and images. Open a piece to see it in full, explore its details or keep its link.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="#work">Browse the artwork</a>
+        <a class="btn btn-ghost" href="#garment">Garment study</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Don’t fit in</span><span>✦</span><span>Sound, design and thread</span><span>✦</span><span>Recognition made tangible</span><span>✦</span>
+      <span>Don’t fit in</span><span>✦</span><span>Sound, design and thread</span><span>✦</span><span>Recognition made tangible</span><span>✦</span>
+      <span>Don’t fit in</span><span>✦</span><span>Sound, design and thread</span><span>✦</span><span>Recognition made tangible</span><span>✦</span>
+      <span>Don’t fit in</span><span>✦</span><span>Sound, design and thread</span><span>✦</span><span>Recognition made tangible</span><span>✦</span>
+    </div>
+  </div>
+
+  <section id="work" class="work" data-reveal>
+    <header class="sec-head">
+      <p class="label">01 — Work</p>
+      <h2 class="sec-title">The artwork</h2>
+      <p class="work-note">Select a piece to look closer.</p>
+    </header>
+    <ul class="gallery">
+      <li><a class="g-item art-open" href="assets/art/imagine.jpg" data-art="imagine" data-title="Imagine In Peace" data-medium="Poster" data-full="assets/art/imagine.jpg"><img src="assets/art/imagine-sm.jpg" width="640" height="853" loading="lazy" alt="Poster: ‘Imagine all the people living in peace’ in red type around a blue line drawing of a car"><span>Imagine In Peace</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/kenosha.jpg" data-art="kenosha" data-title="Kenosha" data-medium="Drawing" data-full="assets/art/kenosha.jpg"><img src="assets/art/kenosha-sm.jpg" width="640" height="640" loading="lazy" alt="Red line drawing of a kneeling figure with a halo and faceted lines projecting from one eye"><span>Kenosha</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/feel-it.jpg" data-art="feel-it" data-title="Ares" data-medium="Drawing" data-full="assets/art/feel-it.jpg"><img src="assets/art/feel-it-sm.jpg" width="640" height="686" loading="lazy" alt="Red line drawing of a helmeted classical bust marked EKSTAZ, over sweeping blue brush strokes"><span>Ares</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/ribcage.jpg" data-art="ribcage" data-title="What’s inside?" data-medium="Drawing" data-full="assets/art/ribcage.jpg"><img src="assets/art/ribcage-sm.jpg" width="640" height="640" loading="lazy" alt="White line drawing of a ribcage with the red EKSTAZ mark at its centre"><span>What’s inside?</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/crown.jpg" data-art="crown" data-title="Crown Vic" data-medium="Drawing" data-full="assets/art/crown.jpg"><img src="assets/art/crown-sm.jpg" width="640" height="640" loading="lazy" alt="Blue and red line drawing of a sedan on black"><span>Crown Vic</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/dont-fit-in.jpg" data-art="dont-fit-in" data-title="Calling" data-medium="Poster" data-full="assets/art/dont-fit-in.jpg"><img src="assets/art/dont-fit-in-sm.jpg" width="640" height="853" loading="lazy" alt="Red and black poster of a flying saucer beaming over a planet"><span>Calling</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/before-thee.jpg" data-art="before-thee" data-title="Ghost of Kenosha" data-medium="Drawing" data-full="assets/art/before-thee.jpg"><img src="assets/art/before-thee-sm.jpg" width="640" height="640" loading="lazy" alt="White line drawing of a kneeling figure with a halo and an open chest exposing the spine"><span>Ghost of Kenosha</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/hands.jpg" data-art="hands" data-title="Blinding" data-medium="Image" data-full="assets/art/hands.jpg"><img src="assets/art/hands-sm.jpg" width="640" height="640" loading="lazy" alt="Raised palm covering a face against a starfield, with split red, green and blue edges"><span>Blinding</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/cross.jpg" data-art="cross" data-title="Cross" data-medium="Drawing" data-full="assets/art/cross.jpg"><img src="assets/art/cross-sm.jpg" width="640" height="896" loading="lazy" alt="Red pencil sketch of an ornate cross with handwritten notes radiating outward"><span>Cross</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/red.jpg" data-art="red" data-title="I Was There" data-medium="Image" data-full="assets/art/red.jpg"><img src="assets/art/red-sm.jpg" width="640" height="640" loading="lazy" alt="A mushroom cloud glowing through rows of repeated red EKSTAZ type, captioned ‘I was there’"><span>I Was There</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/field.jpg" data-art="field" data-title="Create" data-medium="Poster" data-full="assets/art/field.jpg"><img src="assets/art/field-sm.jpg" width="640" height="731" loading="lazy" alt="Poster: ‘CREATE’ in outlined red type above three pairs of glowing red reaching hands"><span>Create</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/falling.jpg" data-art="falling" data-title="Falling" data-medium="Drawing" data-full="assets/art/falling.jpg"><img src="assets/art/falling-sm.jpg" width="640" height="1280" loading="lazy" alt="Red line drawing of a winged figure above water beneath a red and black disc, beside the characters 落下"><span>Falling</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/pain.jpg" data-art="pain" data-title="Pain or Pleasure" data-medium="Image" data-full="assets/art/pain.jpg"><img src="assets/art/pain-sm.jpg" width="640" height="640" loading="lazy" alt="Distorted face washed in red"><span>Pain or Pleasure</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/burnout.jpg" data-art="burnout" data-title="Burnout" data-medium="Drawing" data-full="assets/art/burnout.jpg"><img src="assets/art/burnout-sm.jpg" width="640" height="887" loading="lazy" alt="Red sketched panels of a designer at a desk, worn down, under the word Burnout"><span>Burnout</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/emptiness.jpg" data-art="emptiness" data-title="Emptiness" data-medium="Drawing" data-full="assets/art/emptiness.jpg"><img src="assets/art/emptiness-sm.jpg" width="640" height="887" loading="lazy" alt="Red sketched panels of figures with hollow chests, under the word Emptiness"><span>Emptiness</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/night.jpg" data-art="night" data-title="Night" data-medium="Drawing" data-full="assets/art/night.jpg"><img src="assets/art/night-sm.jpg" width="640" height="887" loading="lazy" alt="Red line drawing of a figure awake beside a sleeping one, a laptop glowing in the dark"><span>Night</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/governance.jpg" data-art="governance" data-title="Governance" data-medium="Drawing" data-full="assets/art/governance.jpg"><img src="assets/art/governance-sm.jpg" width="640" height="1105" loading="lazy" alt="Red line drawing of a winged figure rising from a mass of roots"><span>Governance</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/reach.jpg" data-art="reach" data-title="Reach" data-medium="Drawing" data-full="assets/art/reach.jpg"><img src="assets/art/reach-sm.jpg" width="640" height="399" loading="lazy" alt="Red line drawing of a skeletal hand reaching toward a heart"><span>Reach</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-eye.jpg" data-art="the-eye" data-title="The Eye" data-medium="Drawing" data-full="assets/art/the-eye.jpg"><img src="assets/art/the-eye-sm.jpg" width="640" height="640" loading="lazy" alt="Red symmetrical drawing of a large eye flanked by two smaller eyes and wings, above EKSTAZ"><span>The Eye</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-heart.jpg" data-art="the-heart" data-title="The Heart" data-medium="Drawing" data-full="assets/art/the-heart.jpg"><img src="assets/art/the-heart-sm.jpg" width="640" height="640" loading="lazy" alt="Red drawing of an anatomical heart in a frame, two skeletal hands reaching toward it"><span>The Heart</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-flower.jpg" data-art="the-flower" data-title="The Flower" data-medium="Drawing" data-full="assets/art/the-flower.jpg"><img src="assets/art/the-flower-sm.jpg" width="640" height="896" loading="lazy" alt="Red mandala flower with the letters E K S T A Z around it"><span>The Flower</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-mark.jpg" data-art="the-mark" data-title="The Mark" data-medium="Drawing" data-full="assets/art/the-mark.jpg"><img src="assets/art/the-mark-sm.jpg" width="640" height="640" loading="lazy" alt="Ornate red cross on black"><span>The Mark</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-star.jpg" data-art="the-star" data-title="The Star" data-medium="Drawing" data-full="assets/art/the-star.jpg"><img src="assets/art/the-star-sm.jpg" width="640" height="640" loading="lazy" alt="Red star built from leaves and the word EKSTAZ repeated around it"><span>The Star</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/ouroboros.jpg" data-art="ouroboros" data-title="Ouroboros null and void" data-medium="Drawing" data-full="assets/art/ouroboros.jpg"><img src="assets/art/ouroboros-sm.jpg" width="640" height="640" loading="lazy" alt="Red snake eating its own tail, a bullet marked EKSTAZ passing through it"><span>Ouroboros null and void</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/e30.jpg" data-art="e30" data-title="E30" data-medium="Drawing" data-full="assets/art/e30.jpg"><img src="assets/art/e30-sm.jpg" width="640" height="640" loading="lazy" alt="Blue and red line drawing of a BMW E30"><span>E30</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-coupe.jpg" data-art="the-coupe" data-title="The Coupe" data-medium="Drawing" data-full="assets/art/the-coupe.jpg"><img src="assets/art/the-coupe-sm.jpg" width="640" height="399" loading="lazy" alt="Red line drawing of a BMW coupe"><span>The Coupe</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/widebody.jpg" data-art="widebody" data-title="Widebody" data-medium="Drawing" data-full="assets/art/widebody.jpg"><img src="assets/art/widebody-sm.jpg" width="640" height="640" loading="lazy" alt="Blue and red line drawing of a widebody BMW"><span>Widebody</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/galaris.jpg" data-art="galaris" data-title="Galaris" data-medium="Design" data-full="assets/art/galaris.jpg"><img src="assets/art/galaris-sm.jpg" width="640" height="905" loading="lazy" alt="Black joined-ball typeface specimen, A to Z"><span>Galaris</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/of-the-heart.jpg" data-art="of-the-heart" data-title="Of The Heart" data-medium="Design" data-full="assets/art/of-the-heart.jpg"><img src="assets/art/of-the-heart-sm.jpg" width="640" height="640" loading="lazy" alt="Black and white poster: GALARIS 2021, Of The Heart, For The Heart, between angled bars and ivy leaves"><span>Of The Heart</span></a></li>
+      <li><a class="g-item art-open" href="assets/art/the-creed.jpg" data-art="the-creed" data-title="The Creed" data-medium="Design" data-full="assets/art/the-creed.jpg"><img src="assets/art/the-creed-sm.jpg" width="640" height="360" loading="lazy" alt="Red card: EKSTAZ around an ornate cross, beside the line Manifesting spectacular creations of the mind"><span>The Creed</span></a></li>
+    </ul>
+    <div class="gallery-return">
+      <p>What stayed with you?</p>
+      <a class="btn btn-ghost" href="/#reflection">Return to reflection</a>
+    </div>
+  </section>
+
+  <section id="garment" class="garment" data-reveal>
+    <figure class="garment-art">
+      <a class="art-open garment-study" href="assets/art/blueprint.jpg" data-art="hoodie-study" data-title="Elton 1a" data-medium="Garment study" data-full="assets/art/blueprint.jpg">
+      <img src="assets/art/blueprint-sm.jpg" srcset="assets/art/blueprint-sm.jpg 640w, assets/art/blueprint.jpg 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="640" height="640" loading="lazy" alt="Hand-drawn EKSTAZ hoodie template: front, side and back views">
+      <span class="garment-study-label">Look closer</span></a>
+    </figure>
+    <div class="garment-copy">
+      <p class="label">02 — Garment</p>
+      <h2 class="sec-title">A garment <em>study.</em></h2>
+      <p>Front, side and back views of a hoodie, with notes for an EKSTAZ box logo, a back design and an embroidered red cross.</p>
+      <p class="muted">A design study. Nothing on sale here.</p>
+      <figure class="garment-archive"><img src="assets/art/archive-tee-sm.jpg" srcset="assets/art/archive-tee-sm.jpg 640w, assets/art/archive-tee.jpg 1600w" sizes="(min-width: 900px) 24vw, 70vw" width="640" height="480" loading="lazy" alt="Black T-shirt laid flat, printed with red roses and the words Never Better"><figcaption>From the archive: an earlier T-shirt draft. Not for sale.</figcaption></figure>
+      <div class="garment-specs">
+        <a class="art-open" href="assets/art/hoodie-spec.jpg" data-art="hoodie-spec" data-title="Hoodie spec" data-medium="Garment study" data-full="assets/art/hoodie-spec.jpg"><img src="assets/art/hoodie-spec-sm.jpg" width="640" height="791" loading="lazy" alt="Black hoodie from four sides with handwritten notes: logo 3.5 inches, cross 1 inch, embroidered red stitch"><span>Hoodie spec</span></a>
+        <a class="art-open" href="assets/art/tee-spec.jpg" data-art="tee-spec" data-title="Tee spec" data-medium="Garment study" data-full="assets/art/tee-spec.jpg"><img src="assets/art/tee-spec-sm.jpg" width="640" height="791" loading="lazy" alt="Black T-shirt from three sides with handwritten notes: red embroidery, logo 3.5 inches, cross 1 inch"><span>Tee spec</span></a>
+      </div>
+      <a class="btn btn-ghost" href="#list">Get release updates</a>
+    </div>
+  </section>
+
+  <section id="print" class="mag" data-reveal>
+    <img class="mag-cover" src="assets/art/magazine-sm.jpg" srcset="assets/art/magazine-sm.jpg 640w, assets/art/magazine.jpg 1200w" sizes="(min-width: 900px) 34vw, 78vw" width="640" height="908" loading="lazy" alt="Cover of the EKSTAZ magazine: red crane illustration, Japanese characters and the line ‘What if your lifestyle was a brand?’">
+    <div class="mag-copy">
+      <p class="label">03 — Print</p>
+      <h2 class="sec-title">“What if your lifestyle <em>was a brand?</em>”</h2>
+      <p>The EKSTAZ magazine — December 2021. An early archive of the art, cars and ideas behind the practice.</p>
+      <a class="btn btn-red" href="magazine.html">Read the magazine</a>
+      <ul class="print-more">
+        <li><a href="assets/publications/beyond-the-octagon.pdf" rel="noopener"><img src="assets/publications/beyond-the-octagon.jpg" width="1200" height="675" loading="lazy" alt="Cover of Beyond the Octagon"><span>Beyond the Octagon</span><span class="print-kind">PDF</span></a></li>
+        <li><a href="assets/publications/ekstaz-deck.pdf" rel="noopener"><span>EKSTAZ deck</span><span class="print-kind">PDF</span></a></li>
+        <li><a href="assets/publications/myriad-dubai.pdf" rel="noopener"><span>The Myriad document</span><span class="print-kind">PDF</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="productions" class="sound" data-reveal>
+    <p class="label">04 — Sound</p>
+    <h2 class="sec-title">EKSTAZ <em>Productions</em></h2>
+    <p>The same star, as something you hear. Playlists by EKSTAZ, on Spotify and YouTube.</p>
+    <div class="sound-links">
+      <a class="btn btn-ghost" href="https://www.instagram.com/ekstaz.productions" rel="noopener">@ekstaz.productions</a>
+      <a class="btn btn-ghost" href="https://www.youtube.com/@ekstazdesign4151" rel="noopener">YouTube</a>
+    </div>
+    <div class="sound-player"><iframe title="EKSTAZ playlist on Spotify" src="https://open.spotify.com/embed/playlist/5oj10Mnw6g5nhKNHxqdWzu?utm_source=generator&amp;theme=0" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+    <ul class="print-more playlists" aria-label="Playlists">
+        <li><a href="https://open.spotify.com/playlist/5oj10Mnw6g5nhKNHxqdWzu" rel="noopener"><span>EKSTAZ</span><span class="print-kind">Spotify ↗</span></a></li>
+        <li><a href="https://open.spotify.com/playlist/2gPDLjUzuflILc1dmMFcP6" rel="noopener"><span>EKSTAZ Deep</span><span class="print-kind">Spotify ↗</span></a></li>
+        <li><a href="https://open.spotify.com/playlist/6L2Nb0QnK18Cs2HYpBCTKN" rel="noopener"><span>EKSTAZ Fight Club</span><span class="print-kind">Spotify ↗</span></a></li>
+        <li><a href="https://open.spotify.com/playlist/1864bOpqQSarHHbgrydq9j" rel="noopener"><span>EKSTAZ Drive</span><span class="print-kind">Spotify ↗</span></a></li>
+        <li><a href="https://open.spotify.com/playlist/6NnCvgNDcViKvUcuBu7Of3" rel="noopener"><span>Classical works</span><span class="print-kind">Spotify ↗</span></a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PL0waeXxFmVlmstT_-oxGnBG0E9n1IkbM2" rel="noopener"><span>EKSTAZ From Now</span><span class="print-kind">YouTube ↗</span></a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PL0waeXxFmVlmvOezvehoCaUDIcAlq1ilz" rel="noopener"><span>rough mure</span><span class="print-kind">YouTube ↗</span></a></li>
+    </ul>
+  </section>
+
+  <section id="before" class="before" aria-labelledby="before-title">
+    <div class="before-head">
+      <p class="label">05 — Before</p>
+      <h2 class="sec-title" id="before-title">December <em>2019.</em></h2>
+      <p>An exhibition by Elton: seven paintings and a pair of hands. They hang here in the order he gave them, at their sizes relative to one another.</p>
+      <p class="muted">Ash, fire, wax, talc, fingers and a rag.</p>
+    </div>
+    <figure class="before-room">
+      <img src="assets/art/2019/exhibit-sm.jpg" srcset="assets/art/2019/exhibit-sm.jpg 640w, assets/art/2019/exhibit.jpg 2000w" sizes="(min-width: 900px) 70vw, 100vw" width="640" height="296" loading="lazy" alt="The exhibition room: paintings on easels in a half circle around a black-draped table">
+      <figcaption>The room, December 2019.</figcaption>
+    </figure>
+    <ol class="before-wall">
+      <li class="before-piece" style="--cm: 90"><img src="assets/art/2019/fermi-sm.jpg" srcset="assets/art/2019/fermi-sm.jpg 640w, assets/art/2019/fermi.jpg 1357w" sizes="(min-width: 900px) 280px, 70vw" width="640" height="944" loading="lazy" alt="A white skull at the foot of a bare tree under a red sky, a dark moon above the mountains"><p class="before-label"><span class="before-title">Fermi</span><span>Acrylic, spray paint and poster paint on board canvas · 120 × 90 cm</span></p></li>
+      <li class="before-piece" style="--cm: 130"><img src="assets/art/2019/aokigahara-sm.jpg" srcset="assets/art/2019/aokigahara-sm.jpg 640w, assets/art/2019/aokigahara.jpg 2000w" sizes="(min-width: 900px) 400px, 100vw" width="640" height="471" loading="lazy" alt="A forest of black and grey trees in mist, one tree in red at its centre"><p class="before-label"><span class="before-title">Aokigahara (青木ヶ原)</span><span>Acrylic and clear acrylic glaze on stretched canvas · 100 × 130 cm</span></p></li>
+      <li class="before-piece" style="--cm: 90"><img src="assets/art/2019/guilty-sm.jpg" srcset="assets/art/2019/guilty-sm.jpg 640w, assets/art/2019/guilty.jpg 1450w" sizes="(min-width: 900px) 280px, 70vw" width="640" height="883" loading="lazy" alt="Two red handprints side by side on a hazy grey ground"><p class="before-label"><span class="before-title">Guilty</span><span>Acrylic and talcum powder on stretched canvas · 120 × 90 cm</span></p></li>
+      <li class="before-piece" style="--cm: 130"><img src="assets/art/2019/roots-from-above-sm.jpg" srcset="assets/art/2019/roots-from-above-sm.jpg 640w, assets/art/2019/roots-from-above.jpg 2000w" sizes="(min-width: 900px) 400px, 100vw" width="640" height="377" loading="lazy" alt="Pink blossoms on white branches above black and white mountains, on a black ground"><p class="before-label"><span class="before-title">Roots from Above</span><span>Acrylic and talcum powder on stretched canvas · 100 × 130 cm</span></p></li>
+      <li class="before-piece" style="--cm: 90"><img src="assets/art/2019/malevolent-sm.jpg" srcset="assets/art/2019/malevolent-sm.jpg 640w, assets/art/2019/malevolent.jpg 1500w" sizes="(min-width: 900px) 280px, 70vw" width="640" height="853" loading="lazy" alt="A black anatomical heart in a ring of grey light, bony hands reaching up toward it from the dark"><p class="before-label"><span class="before-title">Malevolent</span><span>Acrylic on stretched canvas, with a rag and fingers · 120 × 90 cm</span></p></li>
+      <li class="before-piece" style="--cm: 130"><img src="assets/art/2019/bleeding-sm.jpg" srcset="assets/art/2019/bleeding-sm.jpg 640w, assets/art/2019/bleeding.jpg 2000w" sizes="(min-width: 900px) 400px, 100vw" width="640" height="483" loading="lazy" alt="Red foliage tipped with white frost on a red ground, a burnt, blackened circle in the corner"><p class="before-label"><span class="before-title">Bleeding</span><span>Paper, ash, spray paint, poster paint and fire on stretched canvas · 100 × 130 cm</span></p></li>
+      <li class="before-piece" style="--cm: 90"><img src="assets/art/2019/exit-sm.jpg" srcset="assets/art/2019/exit-sm.jpg 640w, assets/art/2019/exit.jpg 1457w" sizes="(min-width: 900px) 280px, 70vw" width="640" height="878" loading="lazy" alt="A tall red doorway on a black ground, the word EXIT above it, red light spilling onto the floor"><p class="before-label"><span class="before-title">Exit</span><span>Acrylic on stretched canvas · 120 × 90 cm</span></p></li>
+    </ol>
+    <figure class="before-hands">
+      <img src="assets/art/2019/of-god-and-man-sm.jpg" srcset="assets/art/2019/of-god-and-man-sm.jpg 640w, assets/art/2019/of-god-and-man.jpg 2000w" sizes="(min-width: 900px) 60vw, 100vw" width="640" height="360" loading="lazy" alt="Two life-size hands cast in grey wax, cracked and pierced with wire, reaching toward each other across a white surface">
+      <figcaption><span class="before-title">Of God and Man</span> Life-size hands. Wax from a church’s candle tray, galvanized steel wire, iron wire and wooden toothpicks on stretched canvas.</figcaption>
+    </figure>
+    <a class="btn btn-ghost before-next" href="#list">Stay with EKSTAZ</a>
+  </section>
+
+  <section id="list" class="list" data-reveal>
+    <div class="list-card">
+      <p class="label">Release updates</p>
+      <h2 class="list-title">Stay with <em>EKSTAZ.</em></h2>
+      <p>Email updates are optional. Signing up gives you an arrival number and a mark you can save.</p>
+      <figure class="list-mark">
+        <img src="assets/art/2019/guilty-sm.jpg" width="640" height="883" loading="lazy" alt="Guilty, 2019: two red handprints on a hazy grey ground">
+        <blockquote><p>“Everything you do or touch, there remains a reaction and a mark of your existence.”</p></blockquote>
+        <figcaption>Elton, on <cite>Guilty</cite>, 2019</figcaption>
+      </figure>
+      <form class="join" id="join" action="/api/join" method="post" novalidate>
+        <label class="sr-only" for="email">Email address for release updates</label>
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@email.com">
+        <!-- honeypot: bots fill this, people never see it -->
+        <input class="sr-only" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="join-consent"><input type="checkbox" name="consent" required> I agree EKSTAZ may email me about Edition 01 and related updates. I can opt out anytime.</label>
+        <button class="btn btn-ink" type="submit">Get release updates</button>
+      </form>
+      <p class="join-status" id="join-status" role="status" aria-live="polite"></p>
+      <p class="join-privacy">We keep only your email, use it only for EKSTAZ updates, never share or sell it, and never use it for ads. To opt out or have it deleted, reply to any email or DM <a href="https://www.instagram.com/ekstaz.ae" rel="noopener">@ekstaz.ae</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" data-reveal>
+  <img class="foot-mark" src="assets/wordmark-crimson.png" alt="EKSTAZ" width="2246" height="400" loading="lazy">
+  <nav class="foot-links" aria-label="Social">
+    <a href="https://www.instagram.com/ekstaz.ae" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/ekstaz.productions" rel="noopener">Productions</a>
+    <a href="https://www.youtube.com/@ekstazdesign4151" rel="noopener">YouTube</a>
+  </nav>
+  <p class="label">© 2026 EKSTAZ. All rights reserved.</p>
+</footer>
+
+<dialog class="viewer" id="viewer" aria-labelledby="art-title">
+  <header class="viewer-bar">
+    <p class="label">01 — Work <span id="art-count"></span></p>
+    <button class="viewer-close btn btn-ghost" type="button" aria-label="Close artwork">Close</button>
+  </header>
+  <div class="viewer-body">
+    <div class="viewer-stage" id="art-stage" tabindex="0" role="region" aria-label="Artwork image">
+      <img id="art-image" alt="">
+      <p class="viewer-load" id="art-load" role="status">Loading the image…</p>
+    </div>
+    <aside class="viewer-info">
+      <div class="viewer-heading">
+        <p class="label" id="art-medium"></p>
+        <h2 id="art-title">The work</h2>
+      </div>
+      <div class="viewer-actions">
+        <button class="btn btn-ghost" id="art-detail" type="button" aria-pressed="false" aria-controls="art-stage">Look closer</button>
+        <button class="btn btn-ghost" id="art-share" type="button">Share this piece</button>
+      </div>
+      <section class="viewer-reading" id="art-reading" aria-labelledby="art-reading-label" hidden>
+        <p class="label" id="art-reading-label">A reading</p>
+        <p id="art-reading-text"></p>
+      </section>
+      <p class="viewer-status" id="art-status" role="status" aria-live="polite"></p>
+      <input class="viewer-link" id="art-link" type="text" readonly hidden aria-label="Link to this artwork">
+      <a class="viewer-related" id="art-related" hidden>
+        <img id="art-related-image" alt="" width="160" height="160">
+        <span><span class="label" id="art-related-label"></span><span id="art-related-title"></span></span>
+      </a>
+      <a class="viewer-related" id="art-archive" href="magazine.html?page=12" hidden>
+        <img src="assets/publications/page-12-sm.webp" alt="" width="160" height="160" loading="lazy">
+        <span><span class="label">December 2021</span><span>In the archive →</span></span>
+      </a>
+    </aside>
+  </div>
+  <nav class="viewer-nav" aria-label="Browse artwork">
+    <button class="btn btn-ghost" id="art-prev" type="button">Previous</button>
+    <p id="art-position" class="label" aria-live="polite"></p>
+    <button class="btn btn-ghost" id="art-next" type="button">Next</button>
+  </nav>
+</dialog>
+
+<script src="drone.js" defer></script>
+<script src="ambient.js" defer></script>
+<script src="join.js" defer></script>
+<script src="readings.js" defer></script>
+<script src="viewer.js" defer></script>
+<script src="before.js" defer></script>
+</body>
+</html>

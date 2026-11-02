@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-drone="quiet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Whips · EKSTAZ</title>
+  <meta name="description" content="EKSTAZ night film: the white Merc at night, Jebel Jais, and the cars drawn by hand.">
+  <link rel="canonical" href="https://ekstaz.art/whips.html">
+  <meta name="theme-color" content="#060404">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ekstaz.art/whips.html">
+  <meta property="og:title" content="Whips · EKSTAZ">
+  <meta property="og:description" content="EKSTAZ night film. Cars, drawn and driven.">
+  <meta property="og:image" content="https://ekstaz.art/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ekstaz.art/assets/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site-nav.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<canvas id="field" aria-hidden="true"></canvas>
+
+<header class="bar site-header">
+  <a class="bar-logo" href="/" aria-label="EKSTAZ home"><img src="assets/wordmark-crimson-sm.png" alt="EKSTAZ" width="135" height="24"></a>
+  <nav class="bar-nav site-nav" aria-label="Main">
+    <a href="collection.html">Collection</a>
+    <a href="work.html">Explore</a>
+    <a href="whips.html" aria-current="page">Whips</a>
+    <a href="about.html">About</a>
+    <a href="/#carry">Updates</a>
+  </nav>
+  <div class="bar-end"><a id="return-mark" class="bar-return" href="/" hidden>Your signal</a><button type="button" id="sound" class="bar-sound" aria-pressed="true">Sound on</button></div>
+</header>
+
+<main>
+  <section class="whips-hero">
+    <img src="assets/whips/ml-night.jpg" width="2400" height="1600" alt="White Mercedes at night, Jaden beside it" fetchpriority="high">
+    <div>
+      <p class="label">Night film</p>
+      <h1 class="sec-title">Whips</h1>
+      <a class="btn btn-ghost" href="https://www.instagram.com/ekstaz.whips" rel="noopener">@ekstaz.whips</a>
+    </div>
+  </section>
+
+  <div class="page" style="padding-top:24px">
+    <section class="whips-section" aria-labelledby="drive-title">
+      <p class="label" id="drive-title">The drive</p>
+      <div class="video-frame"><iframe title="Jebel Jais drive" src="https://www.youtube.com/embed/-1L2_PgOPuU?rel=0&amp;playsinline=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+      <p class="video-caption">Jebel Jais · Ras Al Khaimah</p>
+      <ul class="photo-masonry">
+        <li><a href="assets/whips/01-front.jpg"><img src="assets/whips/01-front.jpg" width="2400" height="1350" loading="lazy" alt="DJ on the stage truck at the meet"></a></li>
+        <li><a href="assets/whips/02-rear.jpg"><img src="assets/whips/02-rear.jpg" width="2400" height="1350" loading="lazy" alt="Red Bull stage truck, Jebel Jais"></a></li>
+        <li><a href="assets/whips/08-yard.jpg"><img src="assets/whips/08-yard.jpg" width="2400" height="1350" loading="lazy" alt="Black Toyota Supra in front of the crowd"></a></li>
+        <li><a href="assets/whips/drive-03.jpg"><img src="assets/whips/drive-03.jpg" width="1600" height="900" loading="lazy" alt="Purple Nissan 350Z beside a white car"></a></li>
+        <li><a href="assets/whips/05-smoke.jpg"><img src="assets/whips/05-smoke.jpg" width="1350" height="2400" loading="lazy" alt="White convertible on the mountain road"></a></li>
+        <li><a href="assets/whips/06-cabin.jpg"><img src="assets/whips/06-cabin.jpg" width="1350" height="2400" loading="lazy" alt="Red Camaro against the rock"></a></li>
+        <li><a href="assets/whips/03-low.jpg"><img src="assets/whips/03-low.jpg" width="2400" height="1350" loading="lazy" alt="Silver BMW on the mountain road"></a></li>
+        <li><a href="assets/whips/09-wheel.jpg"><img src="assets/whips/09-wheel.jpg" width="1350" height="2400" loading="lazy" alt="Black Land Cruiser on the mountain road"></a></li>
+        <li><a href="assets/whips/10-wide.jpg"><img src="assets/whips/10-wide.jpg" width="2400" height="1350" loading="lazy" alt="Black and white Volkswagens at the meet"></a></li>
+        <li><a href="assets/whips/11-streak.jpg"><img src="assets/whips/11-streak.jpg" width="2400" height="1350" loading="lazy" alt="Silver BMW, driver at the window"></a></li>
+        <li><a href="assets/whips/04-profile.jpg"><img src="assets/whips/04-profile.jpg" width="2400" height="1350" loading="lazy" alt="Silver Fortuner at dusk, the crew beside it"></a></li>
+        <li><a href="assets/whips/14-lights.jpg"><img src="assets/whips/14-lights.jpg" width="1350" height="2400" loading="lazy" alt="Silver Fortuner at dusk"></a></li>
+        <li><a href="assets/whips/15-plate.jpg"><img src="assets/whips/15-plate.jpg" width="1350" height="2400" loading="lazy" alt="Silver Mercedes with the crew around it"></a></li>
+        <li><a href="assets/whips/16-street.jpg"><img src="assets/whips/16-street.jpg" width="1350" height="2400" loading="lazy" alt="Silver sedan at dusk on the mountain road"></a></li>
+        <li><a href="assets/whips/07-lamp.jpg"><img src="assets/whips/07-lamp.jpg" width="1350" height="2400" loading="lazy" alt="Cars lined along the mountain road"></a></li>
+        <li><a href="assets/whips/13-nose.jpg"><img src="assets/whips/13-nose.jpg" width="1350" height="2400" loading="lazy" alt="Two of the crew, a selfie on the mountain"></a></li>
+      </ul>
+    </section>
+
+    <section class="whips-section" aria-labelledby="night-title">
+      <p class="label" id="night-title">Night</p>
+      <p class="whips-lead">Night. Full frame.</p>
+      <ul class="photo-grid">
+        <li><a href="assets/whips/ml-front.jpg"><img src="assets/whips/ml-front.jpg" width="2400" height="1600" loading="lazy" alt="White Mercedes ML at night, front"></a></li>
+        <li><a href="assets/whips/ml-low.jpg"><img src="assets/whips/ml-low.jpg" width="2400" height="1348" loading="lazy" alt="White Mercedes ML at night, from a low angle"></a></li>
+        <li><a href="assets/whips/jaden.jpg"><img src="assets/whips/jaden.jpg" width="2400" height="1600" loading="lazy" alt="Jaden, Dubai"></a></li>
+      </ul>
+    </section>
+
+    <section class="whips-section" aria-labelledby="show-title">
+      <p class="label" id="show-title">Showtime</p>
+      <div class="video-frame"><iframe title="Mercedes ML, Fortuner, Endeavor" src="https://www.youtube.com/embed/2yVJpCstHlM?rel=0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+      <p class="video-caption">Mercedes ML, Fortuner, Endeavor</p>
+    </section>
+
+    <section class="whips-section" aria-labelledby="moving-title">
+      <p class="label" id="moving-title">Moving</p>
+      <div class="video-frame tall"><video src="assets/whips/night.mp4" poster="assets/whips/ml-night.jpg" controls playsinline loop muted preload="metadata"></video></div>
+      <p class="video-caption">Same night. Unmute it.</p>
+    </section>
+
+    <section class="whips-section" aria-labelledby="drawn-title">
+      <h2 class="sec-title" id="drawn-title">Drawn</h2>
+      <ul class="whips-grid">
+      <li><a href="assets/whips/crown.jpg"><img src="assets/whips/crown.jpg" loading="lazy" alt="Crown Victoria drawing"><span>Crown</span></a></li>
+      <li><a href="assets/whips/crown-2.jpg"><img src="assets/whips/crown-2.jpg" loading="lazy" alt="Crown Victoria, rendered"><span>Crown, rendered</span></a></li>
+      <li><a href="assets/whips/ae86.jpg"><img src="assets/whips/ae86.jpg" loading="lazy" alt="AE86 graphic"><span>AE86</span></a></li>
+      <li><a href="assets/whips/ae86-glitch.jpg"><img src="assets/whips/ae86-glitch.jpg" loading="lazy" alt="AE86 glitch graphic"><span>AE86, glitched</span></a></li>
+      <li><a href="assets/whips/ae86-glitch-2.jpg"><img src="assets/whips/ae86-glitch-2.jpg" loading="lazy" alt="Second AE86 glitch"><span>AE86, glitched again</span></a></li>
+      <li><a href="assets/whips/e30.jpg"><img src="assets/whips/e30.jpg" loading="lazy" alt="BMW E30 graphic"><span>E30</span></a></li>
+      <li><a href="assets/whips/e30-red.jpg"><img src="assets/whips/e30-red.jpg" loading="lazy" alt="BMW E30 in red"><span>E30, red</span></a></li>
+      <li><a href="assets/whips/e30-alt.jpg"><img src="assets/whips/e30-alt.jpg" loading="lazy" alt="Another BMW E30 graphic"><span>E30, again</span></a></li>
+      <li><a href="assets/whips/ares.jpg"><img src="assets/whips/ares.jpg" loading="lazy" alt="Car graphic, glitched"><span>Ares</span></a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="foot" data-reveal>
+  <img class="foot-mark" src="assets/wordmark-crimson.png" alt="EKSTAZ" width="2246" height="400" loading="lazy">
+  <nav class="foot-links" aria-label="Social">
+    <a href="https://www.instagram.com/ekstaz.ae" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/ekstaz.productions" rel="noopener">Productions</a>
+    <a href="https://www.instagram.com/ekstaz.whips" rel="noopener">Whips</a>
+    <a href="https://www.youtube.com/@ekstazdesign4151" rel="noopener">YouTube</a>
+  </nav>
+  <p class="label">Don’t fit in · © 2026 EKSTAZ. All rights reserved.</p>
+</footer>
+
+<script src="drone.js" defer></script>
+<script src="ambient.js" defer></script>
+</body>
+</html>
